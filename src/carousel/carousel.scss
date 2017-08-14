@@ -11,6 +11,15 @@
   background-image:url('img/greywall.png');
 }
 
+.carousel-logo {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
 .carousel-indicators .active {
   background: #583759;
 }
