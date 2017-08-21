@@ -4,9 +4,22 @@ html, body {
   background-image:url('img/greywall.png');
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .app-main-panel {
-  float: right;
-  width: 70%;
-  margin-right: 3.5%;
   height: 300px;
+}
+
+@media (min-width: 970px) {
+    .app-left-columns {
+        padding-left: 45px !important;
+        padding-right: 15px !important;
+    }
+
+    .app-right-columns {
+        padding-right: 45px !important;
+        padding-left: 15px !important;
+    }
 }

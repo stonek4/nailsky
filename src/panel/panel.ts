@@ -1,3 +1,3 @@
-export class MainPanel {
+export class Panel {
 
 }
