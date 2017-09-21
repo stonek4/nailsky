@@ -8,16 +8,25 @@
   <require from="../carousel/carousel"></require>
   <require from="../drawn-logo/drawn-logo"></require>
   <require from="../main-panel/main-panel"></require>
+  <require from="../time-table/time-table"></require>
+  <require from="../tabbed-panel/tabbed-panel"></require>
   <require from="../panel/panel"></require>
   <header></header>
   <nav-bar></nav-bar>
   <carousel></carousel>
   <div class="row">
       <div class="col-md-8 col-sm-12 app-left-columns">
-          <main-panel class="app-main-panel"></main-panel>
+          <main-panel></main-panel>
       </div>
       <div class="col-md-4 col-sm-12 app-right-columns">
-          <panel></panel>
+          <panel>
+              <time-table></time-table>
+          </panel>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-8 col-sm-12 app-left-columns">
+          <tabbed-panel></tabbed-panel>
       </div>
   </div>
 </template>
