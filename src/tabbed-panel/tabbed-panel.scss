@@ -8,8 +8,30 @@
 .tabbed-panel-title {
   font-size: 20px;
   background-color: #583759 !important;
+  padding-bottom: 0;
 }
 
 .nav-tabs {
-    background-color: #583759 !important; 
+    background-color: #583759 !important;
+}
+
+.tabbed-panel-tab {
+    border-style: solid;
+    border-color: #e3e5e8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-width: thin;
+    border-bottom-style: none;
+}
+
+.tabbed-panel-tab.active{
+    background-color: #e3e5e8;
+    border-bottom-style: none;
+    color: #583759 !important;
+}
+
+.tabbed-panel-tab.active a,
+.tabbed-panel-tab.active a:hover,
+.tabbed-panel-tab.active a:focus {
+    color: #583759 !important;
 }
