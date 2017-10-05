@@ -2,6 +2,7 @@
   <require from="bootstrap/css/bootstrap.css"></require>
   <require from="bootstrap-material-design/css/bootstrap-material-design.min.css"></require>
   <require from="bootstrap-material-design/css/ripples.min.css"></require>
+  <require from="aos/aos.css"></require>
   <require from="./app.css"></require>
   <require from="../nav-bar/nav-bar"></require>
   <require from="../header/header"></require>
@@ -15,13 +16,23 @@
   <carousel></carousel>
   <div class="row">
       <div class="col-md-8 col-sm-12 app-left-columns">
-          <panel title.bind="'About Us'"></panel>
-          <tabbed-panel></tabbed-panel>
+          <div data-aos="fade-right">
+              <panel title.bind="'About Us'"></panel>
+          </div>
+          <div data-aos="fade-right">
+              <tabbed-panel></tabbed-panel>
+          </div>
       </div>
       <div class="col-md-4 col-sm-12 app-right-columns">
-          <panel title.bind="'Hours of Operation'">
-              <time-table></time-table>
-          </panel>
+          <div data-aos="fade-left">
+              <panel title.bind="'Hours of Operation'">
+                  <time-table></time-table>
+              </panel>
+          </div>
+          <div data-aos="fade-left">
+              <panel title.bind="'Contact & Location'">
+              </panel>
+          </div>
       </div>
   </div>
 </template>
