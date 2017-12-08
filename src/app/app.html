@@ -12,10 +12,14 @@
   <require from="../panel/panel"></require>
   <header></header>
   <nav-bar></nav-bar>
-  <carousel></carousel>
+  <carousel slides.bind="carouselItems"></carousel>
   <div class="row">
       <div class="col-md-8 col-sm-12 app-left-columns">
-          <panel title.bind="'About Us'"></panel>
+          <panel title.bind="'About Us'">
+              We are a chic nail salon that is located conveniently along Larimer Street in downtown Denver. We offer a one-of-a-kind fast, but high quality nail service that will leave you feeling relaxed and looking wonderful.
+              Our salon accepts both walkins as well as appointments and we will do our absolute best to meet your every need.  Nail Sky offers a variety of services (below) and each worker takes pride in making sure that you
+              leave feeling completely satisfied.  We hope that we will see you sometime soon, thank you for visiting our website!
+          </panel>
           <tabbed-panel></tabbed-panel>
       </div>
       <div class="col-md-4 col-sm-12 app-right-columns">

@@ -6,24 +6,18 @@
       <drawn-logo class="carousel-logo"></drawn-logo>
       <!-- Indicators -->
       <ol class="carousel-indicators">
-        <li data-target="#carousel-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-carousel" data-slide-to="1"></li>
-        <li data-target="#carousel-carousel" data-slide-to="2"></li>
+        <template repeat.for="slide of slides">
+            <li data-target="#carousel-carousel" data-slide-to.bind="$index" class.bind="$first ? 'active' : ''"></li>
+        </template>
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
-        <div class="item active">
-          <img src="http://via.placeholder.com/1600x800" alt="Los Angeles">
-        </div>
-
-        <div class="item">
-          <img src="http://via.placeholder.com/1600x800" alt="Chicago">
-        </div>
-
-        <div class="item">
-          <img src="http://via.placeholder.com/1600x800" alt="New York">
-        </div>
+        <template repeat.for="slide of slides">
+            <div class.bind="'item' + ($first ? ' active': '')">
+              <img src.bind="slide.link" alt="slide.alt">
+            </div>
+        </template>
       </div>
 
       <!-- Left and right controls -->
