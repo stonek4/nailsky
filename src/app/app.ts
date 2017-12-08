@@ -1,12 +1,14 @@
 import * as $ from 'bootstrap-material-design';
 import { CarouselItem } from '../carousel/carousel';
+import * as AOS from 'aos';
 
 export class App {
     private carouselItems: Array<CarouselItem> = new Array<CarouselItem>();
 
     attached() {
-        setTimeout(() => {
-            $.material.init();
+        $.material.init();
+        AOS.init({
+            duration: 1200
         });
     }
 
