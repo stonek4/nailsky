@@ -10,11 +10,15 @@
   <require from="../drawn-logo/drawn-logo"></require>
   <require from="../time-table/time-table"></require>
   <require from="../tabbed-panel/tabbed-panel"></require>
+  <require from="../credit/credit"></require>
   <require from="../panel/panel"></require>
   <header></header>
   <nav-bar></nav-bar>
-  <carousel slides.bind="carouselItems"></carousel>
-  <div class="row">
+  <div class="carousel-section">
+      <carousel slides.bind="carouselItems"></carousel>
+      <credit></credit>
+  </div>
+  <div class="row bottom-section">
       <div class="col-md-8 col-sm-12 app-left-columns">
           <div data-aos="fade-right">
               <panel title.bind="'About Us'">

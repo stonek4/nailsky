@@ -23,3 +23,19 @@ html {
 .panel {
     border-radius: 5px;
 }
+
+.carousel-section {
+    background-image: url('img/background.jpg');
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bottom-section {
+    box-shadow: 0 -2px 2px -2px #000000;
+    position: relative;
+    padding-top: 50px;
+
+}
