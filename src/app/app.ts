@@ -36,6 +36,10 @@ export class App {
         let tab0: Tab = new Tab();
         tab0.title = "Manicure";
         tab0.content = "Manicure content goes here";
+        tab0.headers = ["Service", "Price"];
+        let price0 = new Row();
+        price0.cells = ["Basic Manicure", "$5000.00"];
+        tab0.rows = [price0];
         let tab1: Tab = new Tab();
         tab1.title = "Pedicure";
         tab1.content = "Pedicure content goes here";

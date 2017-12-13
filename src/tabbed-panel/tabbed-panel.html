@@ -1,11 +1,12 @@
 <template>
     <require from="./tabbed-panel.css"></require>
+    <require from="../time-table/time-table"></require>
     <div class="tabbed-panel panel panel-primary">
         <div class="panel-heading tabbed-panel-title">
             <ul class="nav nav-tabs">
               <template repeat.for="tab of tabs">
                   <li class.bind="'tabbed-panel-tab' + ($first ? ' active': '')">
-                    <a data-toggle="tab" href.bind="'#tab-'+$index">
+                    <a data-toggle="tab" href.bind="'#tab-'+$index" click.trigger="changeTable(tab)">
                         ${tab.title}
                     </a>
                   </li>
@@ -13,14 +14,22 @@
             </ul>
         </div>
         <div class="panel-body">
-            <div class="tab-content">
-                <template repeat.for="tab of tabs">
-                      <div id.bind="'tab-'+$index" class.bind="'tab-pane fade' + ($first ? ' in active': '')">
-                          <h3>${tab.title}</h3>
-                          <p>${tab.content}</p>
-                      </div>
-                </template>
+            <div class="row tabbed-panel-text">
+                <div class="col-md-6">
+                    <div class="tab-content">
+                        <template repeat.for="tab of tabs">
+                              <div id.bind="'tab-'+$index" class.bind="'tab-pane fade' + ($first ? ' in active': '')">
+                                  <h3>${tab.title}</h3>
+                                  <p>${tab.content}</p>
+                              </div>
+                        </template>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <time-table headers.bind="headers" rows.bind="rows"></time-table>
+                </div>
             </div>
+
         </div>
     </div>
 </template>
