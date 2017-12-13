@@ -28,13 +28,13 @@
               </panel>
           </div>
           <div data-aos="fade-right">
-              <tabbed-panel></tabbed-panel>
+              <tabbed-panel tabs.bind="tabs"></tabbed-panel>
           </div>
       </div>
       <div class="col-md-4 col-sm-12 app-right-columns">
           <div data-aos="fade-left">
               <panel title.bind="'Hours of Operation'">
-                  <time-table></time-table>
+                  <time-table headers.bind="headers" rows.bind="rows"></time-table>
               </panel>
           </div>
           <div data-aos="fade-left">

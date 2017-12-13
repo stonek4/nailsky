@@ -2,7 +2,7 @@ import { bindable } from 'aurelia-framework';
 
 export class Carousel {
     private headerText: string = "Nail Sky";
-    @bindable public slides: Array<CarouselItem>;
+    @bindable public slides: CarouselItem[];
 }
 
 export class CarouselItem {

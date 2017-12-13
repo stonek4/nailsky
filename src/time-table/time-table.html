@@ -1,41 +1,21 @@
 <template>
   <require from="./time-table.css"></require>
-  <table class="table time-table table-striped table-hover ">
+  <table class="table time-table table-striped">
     <thead>
     <tr class="time-table-header">
-      <th>Day</th>
-      <th>Hours</th>
+      <template repeat.for="header of headers">
+          <th>${header}</th>
+      </template>
     </tr>
     </thead>
     <tbody>
-    <tr>
-      <td>Monday</td>
-      <td>8am-8pm</td>
-    </tr>
-    <tr>
-      <td>Tuesday</td>
-      <td>8am-8pm</td>
-    </tr>
-    <tr>
-      <td>Wednesday</td>
-      <td>8am-8pm</td>
-    </tr>
-    <tr>
-      <td>Thursday</td>
-      <td>8am-8pm</td>
-    </tr>
-    <tr>
-      <td>Friday</td>
-      <td>8am-8pm</td>
-    </tr>
-    <tr>
-      <td>Saturday</td>
-      <td>8am-8pm</td>
-    </tr>
-    <tr>
-      <td>Sunday</td>
-      <td>8am-8pm</td>
-    </tr>
+        <template repeat.for="row of rows">
+            <tr>
+                <template repeat.for="cell of row.cells">
+                    <td>${cell}</td>
+                </template>
+            </tr>
+        </template>
     </tbody>
   </table>
 </template>
