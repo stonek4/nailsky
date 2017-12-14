@@ -36,13 +36,23 @@ export class App {
         let tab0: Tab = new Tab();
         tab0.title = "Manicure";
         tab0.content = "Manicure content goes here";
-        tab0.headers = ["Service", "Price"];
-        let price0 = new Row();
-        price0.cells = ["Basic Manicure", "$5000.00"];
-        tab0.rows = [price0];
+        let priceHeader: string[] = ["Service", "Price"]
+        tab0.headers = priceHeader;
+        tab0.rows.push(new Row(["Manicure", "$15.00"]));
+        tab0.rows.push(new Row(["Male Manicure", "$15.00"]));
+        tab0.rows.push(new Row(["Paraffin Manicure", "$25.00"]));
+        tab0.rows.push(new Row(["Shellac Manicure", "$40.00"]));
+        tab0.rows.push(new Row(["Make it a French", "+$5.00"]));
+
         let tab1: Tab = new Tab();
         tab1.title = "Pedicure";
         tab1.content = "Pedicure content goes here";
+        tab1.headers = priceHeader;
+        tab1.rows.push(new Row(["Pedicure", "$37.00"]));
+        tab1.rows.push(new Row(["Chocolate Spa Pedicure", "$55.00"]));
+        tab1.rows.push(new Row(["Green Tea Spa Pedicure", "$65.00"]));
+        tab1.rows.push(new Row(["Shellac Pedicure", "$55.00"]));
+        tab1.rows.push(new Row(["Make it a French", "+$5.00"]));
 
         this.tabs.push(tab0, tab1);
 

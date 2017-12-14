@@ -21,5 +21,5 @@ export class Tab {
     public title: string;
     public content: string;
     public headers: string[];
-    public rows: Row[];
+    public rows: Row[] = new Array<Row>();
 }
