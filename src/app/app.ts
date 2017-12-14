@@ -54,7 +54,50 @@ export class App {
         tab1.rows.push(new Row(["Shellac Pedicure", "$55.00"]));
         tab1.rows.push(new Row(["Make it a French", "+$5.00"]));
 
-        this.tabs.push(tab0, tab1);
+        let tab2: Tab = new Tab();
+        tab2.title = "Full Set";
+        tab2.content = "Full set content goes here";
+        tab2.headers = priceHeader;
+        tab2.rows.push(new Row(["Silk Set", "$70.00"]));
+        tab2.rows.push(new Row(["Mesh Set", "$100.00"]));
+        tab2.rows.push(new Row(["Tip Set", "$60.00"]));
+        tab2.rows.push(new Row(["Rebase", "$35.00"]));
+        tab2.rows.push(new Row(["Removal", "$5.00-$20.00"]));
+
+        let tab3: Tab = new Tab();
+        tab3.title = "Waxing";
+        tab3.content = "Waxing content goes here";
+        tab3.headers = priceHeader;
+        tab3.rows.push(new Row(["Lip", "$10.00"]));
+        tab3.rows.push(new Row(["Eyebrow", "$12.00"]));
+        tab3.rows.push(new Row(["Chin", "$15.00"]));
+        tab3.rows.push(new Row(["Full Face", "$40.00"]));
+        tab3.rows.push(new Row(["Arm", "$20.00 & Up"]));
+        tab3.rows.push(new Row(["Under Arm", "$20.00"]));
+        tab3.rows.push(new Row(["Upper Leg", "$30.00 & Up"]));
+        tab3.rows.push(new Row(["Lower Leg", "$30.00 & Up"]));
+        tab3.rows.push(new Row(["Bikini", "$30.00 & Up"]));
+        tab3.rows.push(new Row(["Full Bikini", "$50.00"]));
+        tab3.rows.push(new Row(["Male Back", "$60.00 & Up"]));
+
+        let tab4: Tab = new Tab();
+        tab4.title = "Massage";
+        tab4.content = "Massage content goes here";
+        tab4.headers = priceHeader;
+        tab4.rows.push(new Row(["Shoulder/Feet 10min.", "$10.00"]));
+        tab4.rows.push(new Row(["Back 10min.", "$15.00"]));
+        tab4.rows.push(new Row(["Back 15min.", "$20.00"]));
+
+        let tab5: Tab = new Tab();
+        tab5.title = "Other";
+        tab5.content = "Other content goes here";
+        tab5.headers = priceHeader;
+        tab5.rows.push(new Row(["Polish Change", "$10.00-$15.00"]));
+        tab5.rows.push(new Row(["Shellac Polish Change", "$25.00"]));
+        tab5.rows.push(new Row(["Paraffin Hands Treatment", "$10.00"]));
+        tab5.rows.push(new Row(["Paraffin Feet Treatment", "$15.00"]));
+
+        this.tabs.push(tab0, tab1, tab3, tab4, tab5);
 
         this.headers = ["Day", "Hours"];
         let row0: Row = new Row();
