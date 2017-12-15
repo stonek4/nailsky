@@ -36,15 +36,68 @@ export class App {
         let tab0: Tab = new Tab();
         tab0.title = "Manicure";
         tab0.content = "Manicure content goes here";
-        tab0.headers = ["Service", "Price"];
-        let price0 = new Row();
-        price0.cells = ["Basic Manicure", "$5000.00"];
-        tab0.rows = [price0];
+        let priceHeader: string[] = ["Service", "Price"]
+        tab0.headers = priceHeader;
+        tab0.rows.push(new Row(["Manicure", "$15.00"]));
+        tab0.rows.push(new Row(["Male Manicure", "$15.00"]));
+        tab0.rows.push(new Row(["Paraffin Manicure", "$25.00"]));
+        tab0.rows.push(new Row(["Shellac Manicure", "$40.00"]));
+        tab0.rows.push(new Row(["Make it a French", "+$5.00"]));
+
         let tab1: Tab = new Tab();
         tab1.title = "Pedicure";
         tab1.content = "Pedicure content goes here";
+        tab1.headers = priceHeader;
+        tab1.rows.push(new Row(["Pedicure", "$37.00"]));
+        tab1.rows.push(new Row(["Chocolate Spa Pedicure", "$55.00"]));
+        tab1.rows.push(new Row(["Green Tea Spa Pedicure", "$65.00"]));
+        tab1.rows.push(new Row(["Shellac Pedicure", "$55.00"]));
+        tab1.rows.push(new Row(["Make it a French", "+$5.00"]));
 
-        this.tabs.push(tab0, tab1);
+        let tab2: Tab = new Tab();
+        tab2.title = "Full Set";
+        tab2.content = "Full set content goes here";
+        tab2.headers = priceHeader;
+        tab2.rows.push(new Row(["Silk Set", "$70.00"]));
+        tab2.rows.push(new Row(["Mesh Set", "$100.00"]));
+        tab2.rows.push(new Row(["Tip Set", "$60.00"]));
+        tab2.rows.push(new Row(["Rebase", "$35.00"]));
+        tab2.rows.push(new Row(["Removal", "$5.00-$20.00"]));
+
+        let tab3: Tab = new Tab();
+        tab3.title = "Waxing";
+        tab3.content = "Waxing content goes here";
+        tab3.headers = priceHeader;
+        tab3.rows.push(new Row(["Lip", "$10.00"]));
+        tab3.rows.push(new Row(["Eyebrow", "$12.00"]));
+        tab3.rows.push(new Row(["Chin", "$15.00"]));
+        tab3.rows.push(new Row(["Full Face", "$40.00"]));
+        tab3.rows.push(new Row(["Arm", "$20.00 & Up"]));
+        tab3.rows.push(new Row(["Under Arm", "$20.00"]));
+        tab3.rows.push(new Row(["Upper Leg", "$30.00 & Up"]));
+        tab3.rows.push(new Row(["Lower Leg", "$30.00 & Up"]));
+        tab3.rows.push(new Row(["Bikini", "$30.00 & Up"]));
+        tab3.rows.push(new Row(["Full Bikini", "$50.00"]));
+        tab3.rows.push(new Row(["Male Back", "$60.00 & Up"]));
+
+        let tab4: Tab = new Tab();
+        tab4.title = "Massage";
+        tab4.content = "Massage content goes here";
+        tab4.headers = priceHeader;
+        tab4.rows.push(new Row(["Shoulder/Feet 10min.", "$10.00"]));
+        tab4.rows.push(new Row(["Back 10min.", "$15.00"]));
+        tab4.rows.push(new Row(["Back 15min.", "$20.00"]));
+
+        let tab5: Tab = new Tab();
+        tab5.title = "Other";
+        tab5.content = "Other content goes here";
+        tab5.headers = priceHeader;
+        tab5.rows.push(new Row(["Polish Change", "$10.00-$15.00"]));
+        tab5.rows.push(new Row(["Shellac Polish Change", "$25.00"]));
+        tab5.rows.push(new Row(["Paraffin Hands Treatment", "$10.00"]));
+        tab5.rows.push(new Row(["Paraffin Feet Treatment", "$15.00"]));
+
+        this.tabs.push(tab0, tab1, tab3, tab4, tab5);
 
         this.headers = ["Day", "Hours"];
         let row0: Row = new Row();

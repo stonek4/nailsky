@@ -6,5 +6,10 @@ export class TimeTable {
 }
 
 export class Row {
+
     cells: string[];
+
+    constructor(cells?: string[]) {
+      this.cells = cells;
+    }
 }
