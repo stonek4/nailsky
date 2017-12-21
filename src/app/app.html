@@ -12,6 +12,7 @@
   <require from="../tabbed-panel/tabbed-panel"></require>
   <require from="../credit/credit"></require>
   <require from="../panel/panel"></require>
+  <require from="../footer/footer"></require>
   <header></header>
   <nav-bar></nav-bar>
   <div class="carousel-section">
@@ -38,10 +39,22 @@
               </panel>
           </div>
           <div data-aos="fade-left">
-              <panel title.bind="'Contact & Location'">
+              <panel title.bind="'Contact & Location'" class="contact-panel">
+                <a class="btn btn-raised contact-button" href="tel:+1-303-623-5253">
+                  Call Us! &nbsp&nbsp
+                  <span class="glyphicon glyphicon-earphone"></span>
+                   &nbsp&nbsp 303-623-5253
+                </a>
+                <iframe
+                  class="google-map"
+                  frameborder="0" style="border:0"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAq2wTtUZnLm3dUdmFi25QRNyDGvhw9M8M
+                    &q=Nail+Sky+Denver,Colorado" allowfullscreen>
+                </iframe>
               </panel>
           </div>
       </div>
   </div>
+  <footer></footer>
 </template>
 <path xmlns="http://www.w3.org/2000/svg" d=""/>

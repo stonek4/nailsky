@@ -59,9 +59,7 @@ export class App {
         tab2.content = "Full set content goes here";
         tab2.headers = priceHeader;
         tab2.rows.push(new Row(["Silk Set", "$70.00"]));
-        tab2.rows.push(new Row(["Mesh Set", "$100.00"]));
         tab2.rows.push(new Row(["Tip Set", "$60.00"]));
-        tab2.rows.push(new Row(["Rebase", "$35.00"]));
         tab2.rows.push(new Row(["Removal", "$5.00-$20.00"]));
 
         let tab3: Tab = new Tab();
@@ -97,7 +95,7 @@ export class App {
         tab5.rows.push(new Row(["Paraffin Hands Treatment", "$10.00"]));
         tab5.rows.push(new Row(["Paraffin Feet Treatment", "$15.00"]));
 
-        this.tabs.push(tab0, tab1, tab3, tab4, tab5);
+        this.tabs.push(tab0, tab1, tab2, tab3, tab4, tab5);
 
         this.headers = ["Day", "Hours"];
         let row0: Row = new Row();
