@@ -52,7 +52,11 @@
   },
   "build": {
     "copyFiles": {
-          "node_modules/bootstrap/dist/fonts/*": "bootstrap/fonts"
+          "node_modules/bootstrap/dist/fonts/*": "bootstrap/fonts",
+          "scripts/*": "www/scripts",
+          "img/**/*": "www/img",
+          "bootstrap/fonts/*": "www/bootstrap/fonts",
+          "index.html": "www"
     },
     "targets": [
       {
