@@ -35,7 +35,7 @@ export class App {
 
         let tab0: Tab = new Tab();
         tab0.title = "Manicure";
-        tab0.content = "Manicure content goes here";
+        tab0.content = "Our manicures will keep your nails shaped, your cuticles conditioned, and your hands and arms feeling relaxed after we massage them.  Come treat yourself, or schedule a party for your event with us!";
         let priceHeader: string[] = ["Service", "Price"]
         tab0.headers = priceHeader;
         tab0.rows.push(new Row(["Manicure", "$15.00"]));
@@ -46,7 +46,7 @@ export class App {
 
         let tab1: Tab = new Tab();
         tab1.title = "Pedicure";
-        tab1.content = "Pedicure content goes here";
+        tab1.content = "Each pedicure is a relaxing spa experience.  We offer a variety of different spa experiences including chocolate and green tea.  Each spa will leave your feet feeling brand new, and ready to do all of that downtown walking!";
         tab1.headers = priceHeader;
         tab1.rows.push(new Row(["Pedicure", "$37.00"]));
         tab1.rows.push(new Row(["Chocolate Spa Pedicure", "$55.00"]));
@@ -56,7 +56,7 @@ export class App {
 
         let tab2: Tab = new Tab();
         tab2.title = "Full Set";
-        tab2.content = "Full set content goes here";
+        tab2.content = "Our Tip Sets look natural and won't damage your nails, perfect for impressing your friends (or anyone else)!";
         tab2.headers = priceHeader;
         tab2.rows.push(new Row(["Silk Set", "$70.00"]));
         tab2.rows.push(new Row(["Tip Set", "$60.00"]));
@@ -64,7 +64,7 @@ export class App {
 
         let tab3: Tab = new Tab();
         tab3.title = "Waxing";
-        tab3.content = "Waxing content goes here";
+        tab3.content = "Our waxing is accurate and even, making sure that you will feel confident and comfortable when you walk out the doors.";
         tab3.headers = priceHeader;
         tab3.rows.push(new Row(["Lip", "$10.00"]));
         tab3.rows.push(new Row(["Eyebrow", "$12.00"]));
@@ -80,7 +80,7 @@ export class App {
 
         let tab4: Tab = new Tab();
         tab4.title = "Massage";
-        tab4.content = "Massage content goes here";
+        tab4.content = "Come get away from the downtown crowds with a quick massage that will make you forget your are in Denver for a while.";
         tab4.headers = priceHeader;
         tab4.rows.push(new Row(["Shoulder/Feet 10min.", "$10.00"]));
         tab4.rows.push(new Row(["Back 10min.", "$15.00"]));
@@ -88,7 +88,7 @@ export class App {
 
         let tab5: Tab = new Tab();
         tab5.title = "Other";
-        tab5.content = "Other content goes here";
+        tab5.content = "We offer a few other services that are listed here!";
         tab5.headers = priceHeader;
         tab5.rows.push(new Row(["Polish Change", "$10.00-$15.00"]));
         tab5.rows.push(new Row(["Shellac Polish Change", "$25.00"]));
@@ -99,19 +99,19 @@ export class App {
 
         this.headers = ["Day", "Hours"];
         let row0: Row = new Row();
-        row0.cells = ["Monday", "8am-8pm"];
+        row0.cells = ["Monday", "9:30am-7:00pm"];
         let row1: Row = new Row();
-        row1.cells = ["Tuesday", "8am-8pm"];
+        row1.cells = ["Tuesday", "9:30am-7:00pm"];
         let row2: Row = new Row();
-        row2.cells = ["Wednesday", "8am-8pm"];
+        row2.cells = ["Wednesday", "9:30am-7:00pm"];
         let row3: Row = new Row();
-        row3.cells = ["Thursday", "8am-8pm"];
+        row3.cells = ["Thursday", "9:30am-7:00pm"];
         let row4: Row = new Row();
-        row4.cells = ["Friday", "8am-8pm"];
+        row4.cells = ["Friday", "9:30am-7:00pm"];
         let row5: Row = new Row();
-        row5.cells = ["Saturday", "8am-8pm"];
+        row5.cells = ["Saturday", "9:30am-6:00pm"];
         let row6: Row = new Row();
-        row6.cells = ["Sunday", "8am-8pm"];
+        row6.cells = ["Sunday", "10:30am-5:30pm"];
 
         this.rows.push(row0, row1, row2, row3, row4, row5, row6)
     }
