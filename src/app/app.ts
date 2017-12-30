@@ -20,18 +20,22 @@ export class App {
     created() {
         let picture0: CarouselItem = new CarouselItem();
         picture0.link = "img/jumbo_pic_1.jpg";
-        picture0.alt = "a picture of nails";
+        picture0.alt = "a picture of the nail salon";
         let picture1: CarouselItem = new CarouselItem();
         picture1.link = "img/jumbo_pic_2.jpg";
-        picture1.alt = "a picture of nails";
+        picture1.alt = "a picture of the inside of the nail salon";
         let picture2: CarouselItem = new CarouselItem();
         picture2.link = "img/jumbo_pic_3.jpg";
         picture2.alt = "a picture of nails";
         let picture3: CarouselItem = new CarouselItem();
         picture3.link = "img/jumbo_pic_4.jpg";
         picture3.alt = "a picture of nails";
+        let picture4: CarouselItem = new CarouselItem();
+        picture4.link = "img/jumbo_pic_5.jpg";
+        picture4.alt = "a picture of nails";
 
-        this.carouselItems.push(picture0, picture1, picture2, picture3);
+
+        this.carouselItems.push(picture0, picture1, picture2, picture3, picture4);
 
         let tab0: Tab = new Tab();
         tab0.title = "Manicure";
