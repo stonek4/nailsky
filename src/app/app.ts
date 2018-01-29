@@ -103,17 +103,17 @@ export class App {
 
         this.headers = ["Day", "Hours"];
         let row0: Row = new Row();
-        row0.cells = ["Monday", "9:30am-7:00pm"];
+        row0.cells = ["Monday", "10:00am-7:00pm"];
         let row1: Row = new Row();
-        row1.cells = ["Tuesday", "9:30am-7:00pm"];
+        row1.cells = ["Tuesday", "10:00am-7:00pm"];
         let row2: Row = new Row();
-        row2.cells = ["Wednesday", "9:30am-7:00pm"];
+        row2.cells = ["Wednesday", "10:00am-7:00pm"];
         let row3: Row = new Row();
-        row3.cells = ["Thursday", "9:30am-7:00pm"];
+        row3.cells = ["Thursday", "10:00am-7:00pm"];
         let row4: Row = new Row();
-        row4.cells = ["Friday", "9:30am-7:00pm"];
+        row4.cells = ["Friday", "10:00am-7:00pm"];
         let row5: Row = new Row();
-        row5.cells = ["Saturday", "9:30am-6:00pm"];
+        row5.cells = ["Saturday", "10:00am-6:00pm"];
         let row6: Row = new Row();
         row6.cells = ["Sunday", "10:30am-5:30pm"];
 
