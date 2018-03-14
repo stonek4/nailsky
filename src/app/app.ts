@@ -42,8 +42,8 @@ export class App {
         tab0.content = "Our manicures will keep your nails shaped, your cuticles conditioned, and your hands and arms feeling relaxed after we massage them.  Come treat yourself, or schedule a party for your event with us!";
         let priceHeader: string[] = ["Service", "Price"]
         tab0.headers = priceHeader;
-        tab0.rows.push(new Row(["Manicure", "$15.00"]));
-        tab0.rows.push(new Row(["Male Manicure", "$15.00"]));
+        tab0.rows.push(new Row(["Manicure", "$20.00"]));
+        tab0.rows.push(new Row(["Male Manicure", "$20.00"]));
         tab0.rows.push(new Row(["Paraffin Manicure", "$25.00"]));
         tab0.rows.push(new Row(["Shellac Manicure", "$40.00"]));
         tab0.rows.push(new Row(["Make it a French", "+$5.00"]));
